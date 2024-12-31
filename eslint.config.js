@@ -26,7 +26,10 @@ export default tseslint.config(
 			quotes: ['error', 'single'],
 			'jsx-quotes': ['error', 'prefer-double'],
 			semi: ['error', 'always'],
-			'comma-dangle': ['error', 'never']
+			'comma-dangle': ['error', 'never'],
+			'@typescript-eslint/no-empty-object-type': ['error', {
+				allowInterfaces: 'always'
+			}]
 		}
 	}
 );
